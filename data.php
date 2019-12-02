@@ -27,16 +27,13 @@
 		}
 		echo "</select>";
 
-		// echo "<pre>";
-		// print_r($tags);
-
 		
 		echo '<a href="javascript:void(0)" class="delete-db btn btn-primary"> Delete All</a>';
 		foreach($data as $key=>$value){
 			echo "<h2 class='table-".$key."'>Tag: ".$key."</h2>";
 			if(!empty($value)){
 				?>
-					<!-- <a href="javascript:void(0)" class="delete-all table-<?php echo $key; ?>" data-tag="<?php echo $key; ?>">Delete All</a> -->
+					
 					  <table class="table table-<?php echo $key; ?>">
 						<thead>
 						  <tr>
@@ -121,8 +118,7 @@
 		$table_html = "<h1>No Data Available!</h1>";
 		echo "<h1>No Data Available!</h1>";
 		}
-		// echo "<pre>";
-		// print_r($tags);
+	
   ?>
 
 </div>
